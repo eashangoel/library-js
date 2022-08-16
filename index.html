@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>MY LIBRARY</h1>
+<div class="popupform">
+    <form action="get" class="popup" onsubmit="closeForm()">
+        <label for="title">Enter Title</label>
+        <input type="text" name="title" id="title" required>
+        <label for="author">Enter Author</label>
+        <input type="text" name="author" id="author" required>
+        <label for="pages">Enter Pages</label>
+        <input type="number" min="0" name="pages" id="pages" required>
+        <label for="read">Have you read this book?</label>
+        <input type="radio" name="read" id="read">
+        <button type="submit">Add book</button>
+    </form>
+</div>
+<div class="container">
+    <div class="card">
+        <button id="addCardButton">Click to Add</button>
+    </div>
+</div>
+<script src="javascript.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
